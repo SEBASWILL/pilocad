@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 // Conexión a la base de datos MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://wilchessebastian2000:Zzuf0gWg9SHgK4ds@pilocadapp.lwkly4m.mongodb.net/?retryWrites=true&w=majority&appName=PILOCADAPP",
+  .connect(process.env.MONGODB_URI
+    ,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
